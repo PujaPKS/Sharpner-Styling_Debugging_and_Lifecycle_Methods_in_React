@@ -19,26 +19,16 @@ const AddUser = () => {
 
   const addUserHandler = (event) => {
       event.preventDefault();
-      // Way-1 ---> My way
-      if(age > 0 && username !==''){
-        console.log(username , age);
-        setUsername('');
-        setAge('');
+
+      if(username.trim().length === 0 || age.trim().length === 0){
+        return;
       }
+      if(+age < 1){
+        return;
+      }
+      console.log(username , age);
       setUsername('');
       setAge('');
-
-      // //Way-2 ---> using trimed length logic and or operator
-      // if(username.trim().length === 0 || age.trim().length === 0){
-      //   return;
-      // }
-      // if(+age < 1){
-      //   return;
-      // }
-      // console.log(username , age);
-      // setUsername('');
-      // setAge('');
-
   };
     
   return (
