@@ -1,4 +1,4 @@
-UseImperative Hook & forwardRef Method ----> Explanation and usage in code.
+useImperative Hook & forwardRef Method ----> Explanation and usage in code.
 
 For code see files ---> "Login.js", Input folder with "Input.js" file, "Input.module.css" file, "Login.module.css".
 
